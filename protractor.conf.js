@@ -26,7 +26,7 @@ exports.config = {
     'browserName': 'chrome'
   },
   directConnect: true,
-  baseUrl: 'http://localhost:4200/',
+  baseUrl: 'http://li403-56.members.linode.com/',
   framework: 'jasmine',
   jasmineNodeOpts: {
     showColors: true,

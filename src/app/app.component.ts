@@ -94,7 +94,7 @@ export class AppComponent implements AfterViewInit {
 	// transactionRoutes = this.routes[2].list;
 
 	constructor(
-		private authService: AuthService,
+		public authService: AuthService,
 		private matIconRegistry: MatIconRegistry,
 		private domSanitizer: DomSanitizer,
 		private router: Router

@@ -35,7 +35,7 @@ export class CertificateTemplateService {
 	}
 
 	public getAsset(id: any): Observable<CertificateTemplate> {
-		return this.httpClient.get<CertificateTemplate>('http://localhost:3001/api/CertificateTemplate/' + id);
+		return this.httpClient.get<CertificateTemplate>('http://li403-56.members.linode.com:3001/api/CertificateTemplate/' + id);
 		//return this.dataService.getSingle(this.NAMESPACE, id);
 	}
 

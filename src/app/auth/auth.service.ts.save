@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+ 	import { Injectable } from '@angular/core';
 import {Administrator} from '../org.degree';
 import {Observable} from 'rxjs';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
@@ -21,7 +21,7 @@ export class AuthService {
 	}
 
 	signUp(email:string): Promise<any> {		
-		return this.httpClient.head('http://li403-56.members.linode.com:3001/api/Administrator/' +  email).toPromise()
+		return this.httpClient.head('http://50.116.16.56:3001/api/Administrator/' +  email).toPromise()
 			.then((results) => {
 				const identity = {
 					participant: 'org.degree.Administrator#' + email,
@@ -29,7 +29,7 @@ export class AuthService {
 					options: {}
 				};
 
-				return this.httpClient.post('http://li403-56.members.linode.com:3001/api/system/identities/issue', identity, {responseType: 'blob'}).toPromise();
+				return this.httpClient.post('http://50.116.16.56:3001/api/system/identities/issue', identity, {responseType: 'blob'}).toPromise();
 			})
 			.then((cardData) => {
 				console.log('CARD-DATA', cardData);
@@ -40,7 +40,7 @@ export class AuthService {
 
 				const headers = new HttpHeaders();
 				headers.set('Content-Type', 'multipart/form-data');
-				return this.httpClient.post('http://li403-56.members.linode.com:3000/api/wallet/import', formData, {
+				return this.httpClient.post('http://50.116.16.56:3000/api/wallet/import', formData, {
 					withCredentials: true,
 					headers
 				}).toPromise();
@@ -52,7 +52,7 @@ export class AuthService {
 	}
 
 	isAuthenticated(): Promise<boolean> {
-		return this.httpClient.get('http://li403-56.members.linode.com:3000/api/system/ping', {withCredentials: true, observe: 'response'})
+		return this.httpClient.get('http://localhost:3000/api/system/ping', {withCredentials: true, observe: 'response'})
 			.toPromise()
 			.then(response => {
 				return response.status === 200;
@@ -64,7 +64,7 @@ export class AuthService {
 	}
 
 	hasSignedUp(): Promise<boolean> {
-		return this.httpClient.get('http://li403-56.members.linode.com:3000/api/wallet', {withCredentials: true})
+		return this.httpClient.get('http://localhost:3000/api/wallet', {withCredentials: true})
 			.toPromise()
 			.then(results => {
 				console.log(results);
@@ -77,7 +77,7 @@ export class AuthService {
 	}
 
 	async setCurrentUser(): Promise<void> {
-		this.currentUser = await this.httpClient.get('http://li403-56.members.linode.com:3000/api/system/ping', {withCredentials: true}).toPromise()
+		this.currentUser = await this.httpClient.get('http://50.116.16.56:3000/api/system/ping', {withCredentials: true}).toPromise()
 			.then((data) => {
 				console.log(data);
 				const id = data['participant'].split('#')[1];

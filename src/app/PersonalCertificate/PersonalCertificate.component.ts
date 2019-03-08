@@ -32,10 +32,10 @@ export class PersonalCertificateComponent implements OnInit {
 	recipient = new FormControl('', Validators.required);
 	recipientProfile = new FormControl('', Validators.required);
 	hash = new FormControl('', Validators.required);
-	private allAssets;
+	public allAssets;
 	private asset;
 	private currentId;
-	private errorMessage;
+	public errorMessage;
 
 	constructor(private servicePersonalCertificate: PersonalCertificateService, fb: FormBuilder) {
 		this.myForm = fb.group({

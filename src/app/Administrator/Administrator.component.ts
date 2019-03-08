@@ -30,10 +30,10 @@ export class AdministratorComponent implements OnInit {
 	firstName = new FormControl('', Validators.required);
 	lastName = new FormControl('', Validators.required);
 	publicKey = new FormControl('', Validators.required);
-	private allParticipants;
+	public allParticipants;
 	private participant;
 	private currentId;
-	private errorMessage;
+	public errorMessage;
 
 	constructor(private serviceAdministrator: AdministratorService, fb: FormBuilder) {
 		this.myForm = fb.group({

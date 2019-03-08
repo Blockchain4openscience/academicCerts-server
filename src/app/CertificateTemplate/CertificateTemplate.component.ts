@@ -33,7 +33,7 @@ export class CertificateTemplateComponent implements OnInit {
 
 	private allAssets;
 	private currentId;
-	private errorMessage;
+	public errorMessage;
 
 	constructor(private serviceCertificateTemplate: CertificateTemplateService,
 				private loadingService: TdLoadingService,

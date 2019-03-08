@@ -27,15 +27,15 @@ export class VerifyCertificateService {
 					}
 			
 	public getAsset(certId: any): Observable<any> {
-		return this.httpClient.get('http://localhost:3001/api/PersonalCertificate/' + certId);
+		return this.httpClient.get('http://li403-56.members.linode.com:3001/api/PersonalCertificate/' + certId);
 	}
 
 	getCertificateTemplate(templateId: string): Observable<CertificateTemplate> {
-		return this.httpClient.get<CertificateTemplate>('http://localhost:3001/api/CertificateTemplate/' + templateId);
+		return this.httpClient.get<CertificateTemplate>('http://li403-56.members.linode.com:3001/api/CertificateTemplate/' + templateId);
 	}
 
 	requestPersonalCertificateHistory(itemToAdd: any): Observable<PersonalCertificateHistory> {
-		return this.httpClient.post('http://localhost:3001/api/PersonalCertificateHistory', itemToAdd, {observe: 'response'})
+		return this.httpClient.post('http://li403-56.members.linode.com:3001/api/PersonalCertificateHistory', itemToAdd, {observe: 'response'})
 		.pipe(
 			map(this.extractData),
 			catchError(this.handleError)
@@ -47,7 +47,7 @@ export class VerifyCertificateService {
 	}
 
 	requestAdministratorHistory(itemtoAdd: any): Observable<AdministratorHistory> {
-		return this.httpClient.post('http://localhost:3001/api/AdministratorHistory', itemtoAdd, {observe: 'response'})
+		return this.httpClient.post('http://li403-56.members.linode.com:3001/api/AdministratorHistory', itemtoAdd, {observe: 'response'})
 			.pipe(
 				map(this.extractData),
 				catchError(this.handleError)
@@ -59,7 +59,7 @@ export class VerifyCertificateService {
 	}
 
 	getHistorianRecord(transactionId: string): Promise<HistorianRecord> {
-		return this.httpClient.get('http://localhost:3001/api/system/historian/' + transactionId + this.resolveSuffix, {observe: 'response'})
+		return this.httpClient.get('http://li403-56.members.linode.com:3001/api/system/historian/' + transactionId + this.resolveSuffix, {observe: 'response'})
 			.pipe(
 				map(this.extractData),
 				catchError(this.handleError)

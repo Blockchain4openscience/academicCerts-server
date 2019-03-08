@@ -24,7 +24,7 @@ function getTarget() {
 		const restServerURL = process.env.REST_SERVER_URL;
 		return restServerURL;
 	}
-	return 'http://localhost:3000';
+	return 'http://li403-56.members.linode.com:3000';
 }
 
 const target = getTarget();
