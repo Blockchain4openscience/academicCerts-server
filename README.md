@@ -57,7 +57,7 @@ Para realizar la autenticación de usuarios la aplicación utiliza el Api de Goo
 
 ![GooglePlusApi](img/GooglePlusApi.png?raw=true "GooglePlusApi")
 
-Ahora navegue a la pestaña 'Credenciales' y seleccione de la lista desplegable 'Crear Credenciales' la opción 'ID de Cliente de OAuth'. De clic en la opción Web y llene los datos solicitados, como se muestra en la imagen. En 'Nombre', escriba el nombre de su aplicación. En 'Orígenes de Javascript Autorizados', escriba la url de su aplicación, por ejemplo en este caso sería: http://www.certificates.com. Y en 'URIs de redirección autorizados' escriba su url de redirección, por ejemplo: http://www.certificates.com/auth/google/callback
+Ahora navegue a la pestaña 'Credenciales' y seleccione de la lista desplegable 'Crear Credenciales' la opción 'ID de Cliente de OAuth'. De clic en la opción Web y llene los datos solicitados, como se muestra en la imagen. En 'Nombre', escriba el nombre de su aplicación. En 'Orígenes de Javascript Autorizados', escriba la url de su aplicación, por ejemplo en este caso sería: w<span>ww.</span>certificates.com. Y en 'URIs de redirección autorizados' escriba su url de redirección, por ejemplo: w<span>ww.</span>certificates.com/auth/google/callback
 
 ![GenerateCredentials](img/GenerateCredentials.png?raw=true "GenerateCredentials")
 
