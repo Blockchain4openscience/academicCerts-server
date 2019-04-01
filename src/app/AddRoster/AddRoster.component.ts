@@ -255,7 +255,7 @@ export class AddRosterComponent implements OnInit {
 		return (control: AbstractControl): {[key: string]: any} | null => {
 			if (control.value instanceof File) {
 				console.log(control.value.type);
-				if (control.value.type !== 'text/csv') {
+				if ( (control.value.type !== 'text/csv') && (control.value.type !== 'application/vnd.ms-excel') ) {
 					return { 'forbiddenType': { value: control.value } };
 				}
 			}

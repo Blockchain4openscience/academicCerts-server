@@ -1,0 +1,27 @@
+2019-04-01T17:07:29.721Z INFO    :LoadModule               :loadModule()              Loading composer-wallet-filesystem from /home/sergio/.nvm/versions/node/v8.15.0/lib/node_modules/composer-playground/node_modules/composer-wallet-filesystem {}$
+2019-04-01T17:07:29.742Z INFO    :PlaygroundAPI            :createServer()            Playground API started on port 8080 {}$
+2019-04-01T17:09:52.750Z INFO    :PlaygroundAPI            :createServer()            Client with ID 'h2qy1mo2iaM4srVlAAAA' on host '::ffff:186.146.245.43' connected {}$
+2019-04-01T17:10:04.599Z INFO    :PlaygroundAPI            :createServer()            Client with ID 'cVrbNnWV99KT3vC_AAAB' on host '::ffff:186.146.245.43' connected {}$
+2019-04-01T17:10:05.149Z INFO    :ConnectionProfileManager :getConnectionManagerByTyp Looking up a connection manager for type {"0":"hlfv1"}$
+2019-04-01T17:10:05.719Z INFO    :ConnectionProfileManager :getConnectionManagerByTyp Using this connection manager  {"0":{"connectionProfileManager":{}}}$
+2019-04-01T17:10:06.054Z INFO    :HLFConnection            :constructor()             Creating a connection using profile fabric-network to network casaur {}$
+2019-04-01T17:10:06.054Z INFO    :HLFConnection            :createQueryHandler()      attemping to load query handler module ./hlfqueryhandler {}$
+2019-04-01T17:10:06.430Z INFO    :HLFConnection            :_registerForChaincodeEven registering for chaincode events on localhost:7051 for casaur {}$
+2019-04-01T17:10:06.796Z INFO    :ConnectionProfileManager :getConnectionManagerByTyp Looking up a connection manager for type {"0":"hlfv1"}$
+2019-04-01T17:10:06.799Z INFO    :HLFConnection            :constructor()             Creating a connection using profile fabric-network to network casaur {}$
+2019-04-01T17:10:06.800Z INFO    :HLFConnection            :createQueryHandler()      attemping to load query handler module ./hlfqueryhandler {}$
+2019-04-01T17:10:06.912Z INFO    :HLFConnection            :_registerForChaincodeEven registering for chaincode events on localhost:7051 for casaur {}$
+2019-04-01T17:10:39.387Z INFO    :PlaygroundAPI            :createServer()            Client with ID 'cVrbNnWV99KT3vC_AAAB' on host '::ffff:186.146.245.43' disconnected (transport close) {}$
+2019-04-01T17:10:39.388Z INFO    :PlaygroundAPI            :createServer()            Client with ID 'h2qy1mo2iaM4srVlAAAA' on host '::ffff:186.146.245.43' disconnected (transport close) {}$
+2019-04-01T17:10:42.307Z INFO    :PlaygroundAPI            :createServer()            Client with ID 'hR-4bmyIL1yrBSAKAAAC' on host '::ffff:186.146.245.43' connected {}$
+2019-04-01T17:10:44.088Z INFO    :PlaygroundAPI            :createServer()            Client with ID 'gszxYDo6GxVrX305AAAD' on host '::ffff:186.146.245.43' connected {}$
+2019-04-01T17:10:44.387Z INFO    :ConnectionProfileManager :getConnectionManagerByTyp Looking up a connection manager for type {"0":"hlfv1"}$
+2019-04-01T17:10:44.389Z INFO    :HLFConnection            :constructor()             Creating a connection using profile fabric-network to network casaur {}$
+2019-04-01T17:10:44.389Z INFO    :HLFConnection            :createQueryHandler()      attemping to load query handler module ./hlfqueryhandler {}$
+2019-04-01T17:10:44.531Z INFO    :HLFConnection            :_registerForChaincodeEven registering for chaincode events on localhost:7051 for casaur {}$
+2019-04-01T17:10:44.899Z INFO    :ConnectionProfileManager :getConnectionManagerByTyp Looking up a connection manager for type {"0":"hlfv1"}$
+2019-04-01T17:10:44.901Z INFO    :HLFConnection            :constructor()             Creating a connection using profile fabric-network to network casaur {}$
+2019-04-01T17:10:44.901Z INFO    :HLFConnection            :createQueryHandler()      attemping to load query handler module ./hlfqueryhandler {}$
+2019-04-01T17:10:45.014Z INFO    :HLFConnection            :_registerForChaincodeEven registering for chaincode events on localhost:7051 for casaur {}$
+2019-04-01T17:11:19.725Z INFO    :PlaygroundAPI            :createServer()            Client with ID 'gszxYDo6GxVrX305AAAD' on host '::ffff:186.146.245.43' disconnected (transport close) {}$
+2019-04-01T17:11:19.726Z INFO    :PlaygroundAPI            :createServer()            Client with ID 'hR-4bmyIL1yrBSAKAAAC' on host '::ffff:186.146.245.43' disconnected (transport close) {}$

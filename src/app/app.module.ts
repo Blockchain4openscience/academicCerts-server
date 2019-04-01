@@ -34,7 +34,8 @@ import { AuthCallbackComponent } from './auth/auth-callback/auth-callback.compon
 import { AuthSignupComponent } from './auth/auth-signup/auth-signup.component';
 import { CookieService } from 'ngx-cookie-service';
 import {AdministratorComponent} from './Administrator/Administrator.component'
-import {PersonalCertificateComponent} from './PersonalCertificate/PersonalCertificate.component'
+import {PersonalCertificateComponent} from './PersonalCertificate/PersonalCertificate.component';
+import { WarningDialogComponent } from './verify-certificate/warning-dialog/warning-dialog.component'
 
 // import { TransactionComponent } from './Transaction/Transaction.component'
 
@@ -52,11 +53,13 @@ import {PersonalCertificateComponent} from './PersonalCertificate/PersonalCertif
 		AuthCallbackComponent,
 		AuthSignupComponent,
 		AdministratorComponent,
-		PersonalCertificateComponent
+		PersonalCertificateComponent,
+		WarningDialogComponent
 	],
 	entryComponents: [
 		CreateCertificateTemplateDialogComponent,
-		IssueCertificateDialogComponent
+		IssueCertificateDialogComponent,
+		WarningDialogComponent
 	],
 	imports: [
 		BrowserModule,
